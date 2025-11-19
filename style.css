@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #dff6ff;
+    color: #189bc3;
+}
+.pokemon {
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px auto;
+    animation: flutuar 3s infinite ease-in-out;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav {
+    background: #18b183;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+.OSHA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #18b183, #3baee6);
+    color: rgb(200, 243, 229);
+}
+
+.texto {
+    max-width: 500px;
+}
+
+.texto h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.texto p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.Oshawott {
+    width: 220px;
+    animation: flutuar 3s infinite ease-in-out;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.secao {
+    padding: 60px 40px;
+}
+
+.secao h2 {
+    font-size: 28px;
+    border-left: 6px solid #18b183;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #e31e1e;
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+    background: #18b183;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
